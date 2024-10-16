@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --main_bg: #fff;
+    --page_color: #f7f7fb;
+    --input_color: #f0f2f5;
+    --lnline_color: #dee7f4;
+    --primary_bg: #66717f;
+    --single_color: rgba(109, 40, 217, 1);
+    --secondary_bg: #28353c;
+    --hover_clr: #f0f2f5;
+    --blur: rgba(255, 255, 255, 0.8);
+    --text_color: #333;
+    --primary_color: #1fa0ef;
+    --secondary_color: #848f95;
+    --title_color: #66717f;
+    --black: #29313d;
+    --white: #fff;
+    --green: #21d997;
+    --blue: #5093f3;
+    --red: #e54953;
+    --yellow: #d9a94a;
+    --purple-100: #f3e8ff;
+    --pink-100: #fce7f3;
+    --cyan-100: #cffafe;
+    --white-100:#f6f5f5;
+}
+
+/* intinal fonts  */
+
+@font-face {
+    font-family:"Gilroy-Black";
+    src: url(/src/assets/fonts/Gilroy-Black.ttf);
+}
+
+@font-face {
+    font-family:"Gilroy-Bold";
+    src: url(/src/assets/fonts/Gilroy-Bold.ttf);
+}
+@font-face {
+    font-family:"Gilroy-ExtraBold";
+    src: url(/src/assets/fonts/Gilroy-ExtraBold.ttf);
+}
+@font-face {
+    font-family:"Gilroy-Light";
+    src: url(/src/assets/fonts/Gilroy-Light.ttf);
+}
+@font-face {
+    font-family:"Gilroy-Medium";
+    src: url(/src/assets/fonts/Gilroy-Medium.ttf);
+}
+@font-face {
+    font-family:"Gilroy-Regular";
+    src: url(/src/assets/fonts/Gilroy-Regular.ttf);
+}
+@font-face {
+    font-family:"Gilroy-SemiBold";
+    src: url(/src/assets/fonts/Gilroy-SemiBold.ttf);
+}
+
+.bgPost{
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+}
+
+.bgPost textarea{
+    text-align: center;
+    height: 100%;
+    color: #ffffffff;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 600;
+}
+
+.postError {
+    animation:  postAnmi 0.4s forwards;
+}
+
+@keyframes postAnmi {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
