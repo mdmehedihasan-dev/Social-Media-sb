@@ -10,7 +10,6 @@ exports.createPost = async (req,res)=>{
           });
     }
 }
-
 exports.getAllPosts = async (req,res)=>{
     try {
         const post  = await Post.find().populate('user','profilePicture cover fName lName username')
