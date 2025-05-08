@@ -12,7 +12,7 @@ export const userSlice = createSlice({
             state.userInfo = action.payload
         },
         loggedOutUsers:(state)=>{
-            state.userInfo =null
+            state.userInfo = null
         }
     }
 })
