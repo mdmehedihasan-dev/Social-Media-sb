@@ -7,7 +7,7 @@ const postModel = new Schema(
     type: {
       type: String,
       enum: ["profilePicture", "cover", null],
-      default: null,
+      default: null
     },
     images: {
       type: Array,
