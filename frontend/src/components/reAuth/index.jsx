@@ -14,8 +14,6 @@ const ReAuth = ({ userInfo }) => {
     console.log(result)
     } catch (error) {
       setError(error.data.message);
-    console.log(error.data.message)
-
     }
   };
 
